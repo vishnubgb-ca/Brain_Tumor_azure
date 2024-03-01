@@ -1,5 +1,14 @@
 pipeline{
     agent any
+    
+    environment{
+        client_id = credentials('client_id')
+        client_secret = credentials('client_secret')
+        tenant_id = credentials('tenant_id')
+        account_url = credentials('account_url')
+        account_key = credentials('account_key')
+        account_name = credentials('account_name')
+    }
 
     stages{
         stage("Install Dependencies"){
