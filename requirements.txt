@@ -2,3 +2,6 @@ torch
 torchvision
 torchaudio
 dill
+azure-identity
+azure-storage-blob
+datetime
