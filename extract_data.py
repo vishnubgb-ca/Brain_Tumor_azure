@@ -16,10 +16,10 @@ def extract_data():
     container_client = blob_service_client.get_container_client("deeplearning-mlops")
     #bucket_name = 'deeplearning-mlops'
     #url = s3.generate_presigned_url(
-                    ClientMethod='get_object',
-                    Params={'Bucket': bucket_name, 'Key': 'Training.zip'},
-                    ExpiresIn=7500  # URL expiration time in seconds (adjust as needed)
-                )
+    #                ClientMethod='get_object',
+    #                Params={'Bucket': bucket_name, 'Key': 'Training.zip'},
+    #                ExpiresIn=7500  # URL expiration time in seconds (adjust as needed)
+    #            )
     account_key = os.environ["account_key"]
     permissions = BlobSasPermissions(read=True)
     sas_token = generate_blob_sas(
