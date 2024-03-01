@@ -30,7 +30,7 @@ def extract_data():
                     permission=permissions,
                     expiry=datetime.utcnow() + timedelta(hours=1),  
                 )
-    url = f"{account_url}/deeplearning-mlops/{blob}?{sas_token}"
+    url = f"{account_url}/deeplearning-mlops/Training.zip?{sas_token}"
     print(url)
     return url
 
